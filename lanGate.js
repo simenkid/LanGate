@@ -50,6 +50,13 @@ var lanGate = {
     },
     addAuthAccount: function (acnt) {
         // TODO: check type, existense
+        if (Array.isArray(acnt)) {
+
+        } else if (typeof acnt === 'object') {
+
+        } else {
+            throw new Error('Incorrect type');
+        }
         lanGate.configs.authAccounts.push(acnt);
         return lanGate;
     },
@@ -59,6 +66,13 @@ var lanGate = {
     },
     addServiceInfo: function (servInfo) {
         // TODO: check type, existense
+        if (Array.isArray(servInfo)) {
+
+        } else if (typeof servInfo === 'object') {
+
+        } else {
+            throw new Error('Incorrect type');
+        }
         lanGate.configs.services.push(servInfo);
         return lanGate;
     },
