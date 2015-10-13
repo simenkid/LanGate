@@ -1,7 +1,7 @@
 var lanGate = require('./lanGate'),
     gatePort = 2658;
 
-lanGate.addServiceInfo({ name: 'mqtt', port: 5555 })
+lanGate.addServiceInfo({ name: 'mqtt', port: 1883 })
        .addAuthAccount({ username: 'sivann', password: '1234567890' })
        .setPort(gatePort)
        .start();

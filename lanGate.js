@@ -19,6 +19,7 @@ var lanGate = {
 
         server.on('message', function (msg, rinfo) {
             var msgObj = JSON.parse(msg);
+            console.log(msgObj);
             lanGate.emit('message', msgObj);
             lanGate.incomingMsgHandler(msgObj, rinfo);
         });
